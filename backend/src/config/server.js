@@ -9,5 +9,7 @@ server.use(bodyParser.urlencoded({extended:true}))
 server.use(bodyParser.json())
 
 server.listen(port, function() {
-    console.log (`Running on port ${port}`)
+    console.log (`Running on port http://localhost:${port}`)
 })
+
+module.exports = server
